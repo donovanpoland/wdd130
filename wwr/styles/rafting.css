@@ -1,0 +1,178 @@
+:root {
+    --primary-color: #222A65;
+    --secondary-color: #1B3172;
+    --accent1: #1B3172;
+    --accent2: #111533;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav */
+
+nav {
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+nav ul {
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    top: 50%;
+    left: 44%;
+    font-size: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav li {
+    display: inline;
+}
+
+/* main */
+
+body {
+    background-color: var(--primary-color);
+}
+
+.hero {
+    position: relative;
+    height: 400px; 
+    text-align: center; 
+    clear: both;
+}
+
+.hero-bg {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1; /* Push the image behind content */
+}
+
+.hero h1 {
+    position: relative; 
+    margin: 0;
+    padding: 1rem 0;
+    color: white; 
+    font-size: 3rem; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+/* Article Section */
+
+.hero article {
+    position: relative; 
+    max-width: 800px; 
+    margin: 2rem auto 0; 
+    text-align: justify; 
+}
+
+.hero article img {
+    width: 300px; 
+    height: auto;
+    float: right; 
+    margin: 0 0 1rem 1rem; 
+    border-radius: 8px; 
+}
+
+.hero article p {
+    padding: 1em;
+    background-color: rgba(9,75,151, 0.5);
+    color: white; 
+    line-height: 1.6;
+    height: 190px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Trade Winds", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+  }
+
+
+p {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    color: black;
+}
+
+.history section {
+    padding: 1em;
+    background-color: var(--secondary-color);
+    height: auto;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.history h2, p {
+    text-align: center;
+    color: white;
+}
+
+.adventure section{
+    padding: 1em;
+    text-align: center;
+    background-color: var(--accent2);
+    height: auto;
+}
+
+.adventure h2{
+    text-align: center;
+    color: white;
+}
+
+.adventure img {
+    display: inline-block;
+    padding: 1em;
+    width: 400px;
+    height: auto;
+}
+
+
+/* footer */
+
+footer{
+    background-color: var(--accent1);
+    text-align: right;
+    position: relative;
+    padding: 1em;
+}
+
+footer p {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
+footer li {
+    display: inline;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer img {
+    padding: 1em;
+    width: 64px;
+    height: 64px;
+}
