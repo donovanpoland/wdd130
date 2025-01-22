@@ -18,26 +18,21 @@
 nav {
     background-color: var(--secondary-color);
     position: relative;
-}
-
-nav ul {
-    position: absolute;
-    list-style: none;
     text-align: center;
-    top: 50%;
-    left: 44%;
-    font-size: 22px;
 }
 
 nav a {
-    text-decoration: none;
+    
+    display: inline-block;
     color: white;
-
+    font-size: 22px;
+    padding: 1em;
 }
 
-nav li {
-    display: inline;
+nav img {
+    float: left;
 }
+
 
 /* main */
 
