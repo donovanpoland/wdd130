@@ -1,10 +1,8 @@
 :root {
-    --primary-color: #222A65;
-    --secondary-color: #1B3172;
-    --accent1: #1B3172;
+    --primary-color: #094B97;
+    --secondary-color:#1B3172;
+    --accent1: #222A65;
     --accent2: #111533;
-
-
 }
 
 * {
@@ -40,14 +38,16 @@ body {
     background-color: var(--primary-color);
 }
 
+
 .hero {
     position: relative;
     height: 400px; 
     text-align: center; 
     clear: both;
+
 }
 
-.hero-bg {
+.hero img {
     position: absolute; 
     top: 0;
     left: 0;
@@ -58,7 +58,6 @@ body {
 }
 
 .hero h1 {
-    position: relative; 
     margin: 0;
     padding: 1rem 0;
     color: white; 
@@ -69,18 +68,19 @@ body {
 /* Article Section */
 
 .hero article {
-    position: relative; 
     max-width: 800px; 
     margin: 2rem auto 0; 
     text-align: justify; 
 }
 
 .hero article img {
+    position: relative;
     width: 300px; 
     height: auto;
     float: right; 
     margin: 0 0 1rem 1rem; 
     border-radius: 8px; 
+    z-index: 1;
 }
 
 .hero article p {
