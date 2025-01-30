@@ -1,58 +1,67 @@
 :root {
     --textcolor-color: white;
     --background-background-color: darkblue;
-    --imgwidth-width: 150px;
 }
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+header, .grid, footer{
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: var(--background-background-color);
-    padding: 10px;
-    color: var(--textcolor-color);
+    padding: 1rem;
 }
 
 nav a {
-    color: var(--textcolor-color);
     display: block;
-    padding: 5px;
+    color: var(--textcolor-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
-main{
-    max-width: 640px;
-    width: 400px;
-    height: auto;
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 h1 {
-    padding: .5rem;
-    width: 400px;
     color: var(--background-background-color);
-}
+    border-bottom: 1px solid var(--background-background-color) ;
+    text-align: center;
+    margin: 1em;
 
-img {
-    width: var(--imgwidth-width);
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px grey;
 }
 
 p {
+    padding-top: 1em;
     width: 100%;
     height: auto;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    text-indent: 40px;
 }
 
 main img {
-    width: var(--imgwidth-width);
+    padding-top: 1em;
+    width: 200px;
     height: auto;
     float: right;
     margin: 0 0 0 1rem;
+    padding: 2px;
+    box-shadow: 0 0 30px grey;
 }
 
 section {
@@ -65,10 +74,10 @@ section h2 {
 }
 
 aside{
+    width: 20rem;
     position: relative;
-    width: 23em;
-    height: auto;
-    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside h2 {
@@ -79,14 +88,11 @@ aside h2 {
 }
 
 aside img {
-    width: 200px;
+    width: 300px;
     height: auto;
+    
 }
 
-aside p{
-    width: 20em;
-    height: auto;
-}
  footer{
     margin-top: 1em;
     border-top: 1px solid #000;
