@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Form | WDD 130</title>
+    <meta name="description" content="">
+    <meta name="author" content="Donovan Poland">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>Basic HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                    <div class="field-item">
+                        <label for="q1"><strong>1.</strong> What is the correct HTML tag for inserting an image?</label>
+                        <input type="text" id="q1" name="q1" placeholder="ex: &lt;tag&gt">
+                    </div>
+                    <div class="field-item">
+                        <label for="q2"><strong>2.</strong> What is the purpose of the &lt;head&gt; element in an HTML document?</label>
+                        <textarea name="q2" id="q2" rows="5" placeholder="Type your answer here..."></textarea>
+                    </div>
+                    <div class="field-item">
+                        <label for="q3"><strong>3.</strong> Which tag is used to create an unordered list in HTML?</label>
+                        <select name="q3" id="q3">
+                            <option value="" selected disabled>Choose One</option>
+                            <option value="ol">&lt;ol&gt;</option>
+                            <option value="ul">&lt;ul&gt;</option>
+                            <option value="li">&lt;li&gt;</option>
+                            <option value="list">&lt;list&gt;</option>
+                        </select>
+                    </div>
+                    <div class="field-item">
+                        <label for="q4"><strong>4.</strong> How many total elements are in the above HTML code?</label>
+                        <img src="/week05/images/codesnip.PNG" alt="html code">
+                        <input type="number" id="q4" name="q4" placeholder="Enter a number">
+                    </div>
+            </fieldset>
+            <button type="submit">Submit Quiz</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy;2025 | Example Quiz | Donovan Poland</p>
+    </footer>
+    
+</body>
+</html>
