@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Trade+Winds&display=swap" rel="stylesheet" media="all">
     <title>Contact Us | &copy;Splash White Water Rafting</title>
     <meta name="description" content="Contact us to learn more about Splash White Water Rafting.">
     <meta name="author" content="Donovan Poland">
@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="navbar">
-            <img src="images/z-splash.png" alt="logo" class="logo">
+            <img src="images/z-splash.webp" alt="logo" class="logo">
             <nav>
                     <a href="index.html">Home</a>
                     <a href="about.html">About us</a>
@@ -23,103 +23,111 @@
             </nav>
         </div> <!-- end navbar div-->
     </header>
-    <div class="grid">
-    <main>
-        <article class="contactus">
-            <div class="ourinfo">
-                <h1>Contact us</h1><br>
-                <h2>For a good time call:</h2>
-                <p>801-867-5309</p><br>
-                <h2>Meet with us at:</h2>
-                <p>Hwy 40 and I397, Kremmling, CO 80459</p><br>
-                <h2>For other inquiries email us at: </h2>
-                <p>Splashwwr@email.com</p>
-            </div> <!--End our info dif-->
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5190.755171684349!2d-106.34485342677141!3d40.05001001114522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1739062105066!5m2!1sen!2sus" 
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div> <!--End map div-->
-        </article> <!--End contactus article-->
-        <section class="theteam">
-                <div class="team_h2">
-                    <h2>About our team!</h2>
-                </div>
-                <figure class="teamfig">
-                    <h3>Jake Carter</h3>
-                    <img src="images/jake_carter.jpg" alt="Jake Carter">
-                    <figcaption>Adventurous leader, former rafting guide, 
-                        fearless in rapids, quick thinker, rugged, loyal, 
-                        and always chasing the next thrill.</figcaption>
-                </figure>
-                <figure class="teamfig">
-                    <h3>Luis Navarro</h3>
-                    <img src="images/luis_navarro.jpg" alt="Luis Navarro">
-                    <figcaption>Business-minded strategist, meticulous planner,
-                         marketing guru, numbers expert, steady under pressure,
-                          ambitious, and the glue holding operations together.</figcaption>
-                </figure >
-                <figure class="teamfig">
-                    <h3>Caleb Moreno</h3>
-                    <img src="images/caleb_moreno.jpg" alt="Caleb Moreno">
-                    <figcaption>Charismatic people-person, expert navigator,
-                         energetic, passionate about nature, skilled instructor,
-                          humorous, and turns every trip into an unforgettable adventure.</figcaption>
-                </figure>
-                <figure class="teamfig">
-                    <h3>Sophie Langley</h3>
-                    <img src="images/sophie_langley.jpg" alt="Sophie Langley">
-                    <figcaption>Gear expert, safety-focused, former rescue swimmer,
-                         calm under stress, problem solver, wilderness medic,
-                          resourceful, and always prepared for anything.
-                    </figcaption>
-                </figure>
-        </section> <!--End theteam section-->
-        <form>
-                <fieldset class="formgrid">
-                    <legend>Send us a message</legend>
-                    <div class="userinfo">
-                        <label for="fullname">First Name:</label>
-                        <input type="text" id="fullname" name="fullname" placeholder="Your Name"><br>
-                        <label for="useremail">Email:</label>
-                        <input type="email" id="useremail" name="useremail" placeholder="Your email address"><br>
-                        <label for="companyname">Company Name: (optional)</label>
-                        <input type="text" id="companyname" name="companyname" placeholder="Company name">
-                    </div><!--End userinfo div-->
-                    <div class="purpose">
-                        <p>Purpose of Inquiry:</p><br><br>
-                        
-                        <input type="radio" name="purpose" value="general" id="general">
-                        <label for="general">General Inquiry</label><br>
-                        
-                        
-                        <input type="radio" name="purpose" value="reservation" id="reservation">
-                        <label for="reservation">Reservation Question</label><br>
-                        
+    <main class="grid">
+            <section class="location">
+                <article class="contactus">
+                    <div class="ourinfo">
+                        <h1>Contact us</h1><br>
+                        <h2>For a good time call:</h2>
+                        <p>801-867-5309</p><br>
+                        <h2>Meet with us at:</h2>
+                        <p>Hwy 40 and I397, Kremmling, CO 80459</p><br>
+                        <h2>For other inquiries email us at: </h2>
+                        <p>Splashwwr@email.com</p>
+                    </div> <!--End our info dif-->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2875.406579226715!2d-106.34772896946644!3d40.04999950107229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1739771927620!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div> <!--End map div-->
+                </article> <!--End contactus article-->
+            </section>
+            <section>
+                <div class="team">
+                    <h2 class="team_h2">About our team!</h2>
+                    <figure class="teamfig">
+                        <h3>Jake Carter</h3>
+                        <img src="images/jake_carter.jpg" alt="Jake Carter">
+                        <figcaption>Adventurous leader, former rafting guide, 
+                            fearless in rapids, quick thinker, rugged, loyal, 
+                            and always chasing the next thrill.</figcaption>
+                    </figure>
+                    <figure class="teamfig">
+                        <h3>Luis Navarro</h3>
+                        <img src="images/luis_navarro.jpg" alt="Luis Navarro">
+                        <figcaption>Business-minded strategist, meticulous planner,
+                            marketing guru, numbers expert, steady under pressure,
+                            ambitious, and the glue holding operations together.</figcaption>
+                    </figure >
+                    <figure class="teamfig">
+                        <h3>Caleb Moreno</h3>
+                        <img src="images/caleb_moreno.jpg" alt="Caleb Moreno">
+                        <figcaption>Charismatic people-person, expert navigator,
+                            energetic, passionate about nature, skilled instructor,
+                            humorous, and turns every trip into an unforgettable adventure.</figcaption>
+                    </figure>
+                    <figure class="teamfig">
+                        <h3>Sophie Langley</h3>
+                        <img src="images/sophie_langley.jpg" alt="Sophie Langley">
+                        <figcaption>Gear expert, safety-focused, former rescue swimmer,
+                            calm under stress, problem solver, wilderness medic,
+                            resourceful, and always prepared for anything.
+                        </figcaption>
+                    </figure>
+                    <figure class="teamfig">
+                        <h3>Olivia Sanchez</h3>
+                        <img src="images/olivia-sanchez.jpg" alt="Olivia Sanchez">
+                        <figcaption>Olivia brings a passion for adventure and a knack 
+                            for organization to our team. As our Trip Coordinator, she works
+                             closely with clients to craft unforgettable rafting experiences, 
+                             handling logistics and ensuring every detail is perfectly arranged.
+                        </figcaption>
+                    </figure>
+                </div> <!--End theteam div-->
+            </section> 
+            <form>
+                    <fieldset class="formgrid">
+                        <legend>Send us a message</legend>
+                        <div class="userinfo">
+                            <label for="fullname">First Name:</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Your Name"><br>
+                            <label for="useremail">Email:</label>
+                            <input type="email" id="useremail" name="useremail" placeholder="Your email address"><br>
+                            <label for="companyname">Company Name: (optional)</label>
+                            <input type="text" id="companyname" name="companyname" placeholder="Company name">
+                        </div><!--End userinfo div-->
+                        <div class="purpose">
+                            <p>Purpose of Inquiry:</p><br><br>
+                            
+                            <input type="radio" name="purpose" value="general" id="general">
+                            <label for="general">General Inquiry</label><br>
+                            
+                            
+                            <input type="radio" name="purpose" value="reservation" id="reservation">
+                            <label for="reservation">Reservation Question</label><br>
+                            
 
-                        <input type="radio" name="purpose" value="webdev" id="webdev">
-                        <label for="webdev">Website Suggestion</label>
-                        
-                        
-                    </div> <!--End purpose div-->
-                    <div class="message">
-                        <label for="message">Leave us a message...</label>
-                        <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                        <label for="subscribe">Please subscribe me to the weekly news letter!</label>  
-                    </div><!--End message div-->
-                </fieldset>
-                <button type="submit">Send Message</button>
-        </form> <!--End formgrid div-->
+                            <input type="radio" name="purpose" value="webdev" id="webdev">
+                            <label for="webdev">Website Suggestion</label>
+                            
+                            
+                        </div> <!--End purpose div-->
+                        <div class="message">
+                            <label for="message">Leave us a message...</label>
+                            <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            <label for="subscribe">Please subscribe me to the weekly news letter!</label>  
+                        </div><!--End message div-->
+                    </fieldset>
+                    <button type="submit">Send Message</button>
+            </form> <!--End formgrid div-->
     </main>
-    </div> <!-- end grid div-->
         <footer>
             <div class="footnav">
                 <p>&copy;2025 Splash White Water Rafting | Donovan Poland</p>
-                <a href="/wwr/images/wireframe.PNG" target=”_blank”>Wireframe</a>
+                <a href="/wwr/images/wireframe_contact.PNG" target=”_blank”>Wireframe</a>
                 <div class="social-links">
                     <a href="https://www.facebook.com"><img src="images/facebook_logo.webp" alt="Facebook"></a>
-                    <a href="https://www.x.com"><img src="images/x_logo.webp" alt="X"></a>
+                    <a href="https://www.x.com"><img src="images/x_logo.avif" alt="X"></a>
                     <a href="https://www.instagram.com/"><img src="images/instagram_logo.webp" alt="Instagram"></a>
                 </div> <!-- end social-links div-->
             </div> <!-- end footnav div-->    

@@ -13,21 +13,22 @@
     color: white;
 }
 
-.grid {
-    display: grid;
-    max-width: var(--max_w);
-    grid-template-columns: 1fr;
-
-}
 body {
     background-color: var(--primary-color);
-    grid-column: 1/2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    /* max-width: var(--max_w); */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Trade Winds", serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
   }
 
 h1 {
@@ -46,6 +47,7 @@ p {
     font-family: "Roboto", serif;
     font-weight: 400;
     font-style: normal;
+    text-indent: 40px;
 }
 
 /* header */
@@ -87,44 +89,76 @@ nav a {
 
 /* main */
 /* Hero */
+
+.banner {
+    overflow: hidden;
+    background: var(--accent1);
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+.promotion {
+    white-space: nowrap;
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    animation: scrollBanner 20s linear infinite;
+    max-width: var(--max_w);
+}
+
+@keyframes scrollBanner {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
 .hero {
     position: relative;
-    height: 400px; 
-    text-align: center; 
+    height: 600px;
+    text-align: center;
     clear: both;
+    width: 100%;
 }
 
 .hero img {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     max-width: var(--max_w);
     width: 100%;
-    height: 100%; 
-    object-fit: cover; 
-    z-index: -1; /* Push the image behind content */
+    height: 100%;
+    /* object-fit: cover; */
+    z-index: -1;
 }
 
-.hero h1 {
+.hero h1{
     margin: 0;
     padding: 1rem 0;
-    font-size: 3rem; 
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero article {
-    max-width: 800px; 
-    margin: 2rem auto 0; 
-    text-align: justify; 
+    max-width: 800px;
+    margin: 2rem auto 0;
+    text-align: justify;
 }
 
 .hero article img {
     position: relative;
-    width: 300px; 
+    width: 300px;
     height: auto;
-    float: right; 
-    margin: 0 0 1rem 1rem; 
-    border-radius: 8px; 
+    float: right;
+    margin: 0 0 1rem 1rem;
+    border-radius: 8px;
     z-index: 1;
 }
 
@@ -134,15 +168,23 @@ nav a {
     line-height: 1.6;
     height: 190px;
     text-align: center;
-    
 }
+
+.hero a {
+    text-decoration: none;
+}
+
 /* main */
 /* Contact us */
+.location {
+    display: grid;
+}
+
 .contactus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: var(--max_w);
+    width: 100%;
     margin: auto;
     gap: 20px;
     background-color: var(--accent1);
@@ -150,7 +192,6 @@ nav a {
 
 .ourinfo {
     flex: 1;
-        max-width: var(--max_w);
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -159,7 +200,6 @@ nav a {
 
 .map {
     flex: 1;
-    max-width: var(--max_w);
     padding: 2em;
 }
 
@@ -167,16 +207,14 @@ iframe {
     width: 100%;
     height: 450px;
     border: 0;
-
 }
+
 
 /* main */
 /* Sections */
 
 section {
-    display: grid;
-    text-align: center;
-    max-width: var(--max_w);
+    width: 100%;
 }
 
 .history {
@@ -184,36 +222,166 @@ section {
     gap: 1rem;
     padding: 1rem;
 }
-
-.adventure, .theteam {
-    display: grid;
-    align-items: center;
-    background-color: var(--accent2);
-    padding: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
-    width: 100%;
-    gap: 1rem;
-    text-align: center;
-}
-
-.ad_grid_h2, .team_h2{
+.adv_h2, .team_h2{
     grid-column: 1 / -1;
     text-align: center;
 }
 
-.ad_grid_fig {
+.adventure, .team {
+    display: grid;
+    background-color: var(--accent2);
+    padding: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
     text-align: center;
-    width: 300px;
 }
 
-.adventure img, .theteam img{
+.adventure img, .team img{
     width: 300px;
     height: auto;
+    transition: transform 0.4s ease-in-out, box-shadow 1s ease-in-out;;
 }
 
-.teamfig {
+.adv_fig, .teamfig{
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.adv_fig:hover, .teamfig:hover{
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.book_trip {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--accent1);
+    border: solid white;
+    border-radius: 16px;
+}
+
+.book_trip img, .book_trip a{
+    width: 100%;
+    max-width: auto;
+    height: 80%;
+    text-decoration: none;
+    object-fit: cover;
+    padding: 1em;
+    
+}
+
+figcaption {
+    margin-top: 8px;
+}
+
+.grid2 {
     display: grid;
-    justify-content: space-around;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 500px;
+    gap: 20px;
+    max-width: var(--max_w);
+    margin: auto;
+  }
+
+.grid2 div {
+    background-color: var(--accent1);
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.news_letter {
+    border: solid white;
+    border-radius: 16px;
+    height: 500px;
+    background-color: var(--accent1);
+    padding: 1em;
+}
+
+.news_letter p {
+    font-size: 20px;
+    padding: 1em;
+}
+
+
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    border: solid white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.reviews > h2 {
+    grid-column: 1 / -1;
+    background-color: var(--accent1);
+    width: 100%;
+  }
+
+.review {
+    background-color: var(--accent1);
+    display: flex;
+    flex-direction: column;
+}
+
+.checked {
+    color: orange;
+}
+
+.review p{
+    padding: 1rem;
+}
+
+.container {
+    border: solid white;
+    border-radius: 16px;
+    background-color: var(--accent1);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.slider-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: solid white 1px;
+    border-radius: 16px;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Start hidden */
+    opacity: 0;
+    animation: fadeAnimation 15s infinite;
+}
+
+
+.slider img:nth-child(1) { animation-delay: 0s; }
+.slider img:nth-child(2) { animation-delay: 5s; }
+.slider img:nth-child(3) { animation-delay: 10s; }
+
+@keyframes fadeAnimation {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  33%  { opacity: 1; }
+  43%  { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 
@@ -225,7 +393,6 @@ form {
     height: auto;
     margin: 0 auto;
     padding: 1rem;
-    border-radius: 0.5rem;
     background-color: var(--accent1);
 }
 
@@ -244,9 +411,8 @@ input, textarea {
 
 .formgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    max-width: 900px;
     margin: auto;
     border: 1px solid var(--accent2);
     align-items: center;
@@ -265,7 +431,7 @@ input, textarea {
 }
 
 input[type="radio"] {
-    vertical-align: middle;
+    vertical-align: center;
 }
 
 input[type="checkbox"] {
@@ -274,7 +440,7 @@ input[type="checkbox"] {
     vertical-align: center;
 }
 
-button {
+button, .button{
     padding: 10px 20px;
     margin-top: 20px;
     border: none;
@@ -284,10 +450,36 @@ button {
     transition-duration: 1s;
 }
 
-button:hover {
+button:hover, .button:hover{
     background-color: green;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transition-duration: 1s;   
+    transition-duration: 1s;
+}
+
+/* trips page */
+.price-table {
+    border-collapse: collapse;
+    text-align: center;
+    background-color: var(--accent1);
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2em;
+}
+
+
+table{
+    border: white solid;
+    font-size: 26px;
+    /* grid-column: 1/2; */
+}
+
+th{
+    border-bottom: solid white;
+}
+
+td{
+    border-bottom: white dashed;
 }
 
 
